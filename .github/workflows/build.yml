@@ -25,7 +25,10 @@ jobs:
       
     - name: Build with Gradle
       run: ./gradlew build
-
+      
+    - name: List files
+      run: ls -R ./
+      
     - uses: actions/upload-artifact@v4
       with:
         name: fairy-artifacts
